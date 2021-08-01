@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <style>
+      body {
+        background-color: #03c4a1;
+        background-image: linear-gradient(to top, #03c4a1 0%, #8fc1b8 100%);
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px 40px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #150485;
+        font-size: 38px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        color: #590995;
+        border: 1px solid #150485;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 100%;
+      }
+
+      p {
+        color: #c62a88;
+        font-size: 16px;
+        font-weight: 550;
+        line-height: 1.5;
+        margin: 10px auto;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .watch-here {
+        color: #590995;
+      }
+
+      .watch-here:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .learn-more {
+        display: block;
+        margin: 10 0;
+        color: #c62a88;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-decoration: none;
+        font-size: 15px;
+        transition: all 200ms ease-in-out;
+        font-weight: 400;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+        color: #590995;
+        font-weight: 400;
+      }
+
+      button {
+        display: block;
+        margin: 15px auto;
+        color: white;
+        background-color: #590995;
+        font-size: 24px;
+        border: 1px solid #150485;
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        transition: all 200ms ease-in-out;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      button:hover {
+        color: #590995;
+        background-color: white;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .footer {
+        color: white;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .name {
+        color: white;
+        transition: all 200ms ease-in-out;
+      }
+
+      .name:hover {
+        cursor: pointer;
+        color: #150485;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Movies...</h1>
+
+      <h2>Action, Romcom, Thriller, Crime and Superhero!</h2>
+
+      <img
+        src="https://observer.com/wp-content/uploads/sites/2/2021/05/summer-movies-2021-new-e1620919489437.jpg?resize=1536,1167"
+        alt="New Movies"
+      />
+
+      <hr />
+      <p>
+        Film, also called movie, motion picture or moving picture, is a visual
+        art-form used to simulate experiences that communicate ideas, stories,
+        perceptions, feelings, beauty, or atmosphere through the use of moving
+        images. These images are generally accompanied by sound, and more
+        rarely, other sensory stimulations. The word "cinema", short for
+        cinematography, is often used to refer to filmmaking and the film
+        industry, and to the art form that is the result of it.
+
+        <br />
+        <br />
+
+        I watch movies on
+        <span class="watch-here">Netflix</span>,
+        <span class="watch-here">Amazon Prime</span>,
+        <span class="watch-here">Disney Plus</span>, and
+        <span class="watch-here">NowTV</span>.
+      </p>
+      <br />
+      <a
+        class="learn-more"
+        href="https://www.imdb.com/what-to-watch/?ref_=nv_watch"
+        target="_blank"
+        class="IMDb"
+        ><em>Check out more movie info <strong> here</strong>...</em>
+      </a>
+      <hr />
+      <button>👉 Sign Up for <em>Honest</em> Reviews...</button>
+      <br />
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/laurajaynehunter/"
+          target="_blank"
+          class="name"
+        >
+          Laura Hunter.</a
+        >
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let age = prompt("How old are you?");
+        let emoji = prompt("What is your favourite emoji?");
+
+        if (age > 16) {
+          alert(
+            "Thank you, " +
+              name +
+              "! We'll be in touch by email soon with an R-rated review 😉, meanwhile keep watching MOVIES! " +
+              emoji
+          );
+        } else {
+          alert(
+            "Thank you, " +
+              name +
+              "! We'll be in touch by email soon with an awesome review 😉, meanwhile keep watching MOVIES! " +
+              emoji
+          );
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
